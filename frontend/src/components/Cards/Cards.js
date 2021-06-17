@@ -1,12 +1,13 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import { Link } from 'react-router-dom';
 
 function Cards() {
   return (
     <div className='cards'>
       
-      <h1>Pourquoi nous choisir ?</h1>
+      <h1>QUI SOMMES-NOUS ?</h1>
       <div class="col-xl-6 col-lg-6 col-md pr-0">
       <div className='cards__container'>
         <div className='cards__wrapper'>
@@ -16,45 +17,34 @@ function Cards() {
       <p class="safe-pera-one">Conscients de l’importance du respect des normes en vigueur, nous utilisons des matériaux agréés et de qualité, vous garantissant ainsi la qualité et la fiabilité avec laquelle vos projets méritent d’être élaborés.</p>
 </div>
 </div></div>
-      <h1>Check out these EPIC Destinations!</h1>
+      <h1>NOS SERVICES</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          <ul className='cards__items'>
-            <CardItem
-              src='images/img-9.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
-              path='/services'
-            />
-            <CardItem
-              src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
-              path='/services'
-            />
-          </ul>
+          
           <ul className='cards__items'>
             <CardItem
               src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
+              text='Nous prenons en charge les installations, rénovations et remises aux normes électriques de tous types !'
+              label='ÉLÉCTRICITÉ'
               path='/services'
             />
             <CardItem
               src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
-              path='/products'
+              text='Master Services, votre spécialiste en rénovations et transformations à Bruxelles, dans le Brabant Wallon et le Brabant Flamand.'
+              label='RÉNOVATION'
+              path='/services'
             />
             <CardItem
               src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/sign-up'
+              text='La plomberie, le chauffage, le sanitaire et l’HVAC (climatisations, pompes à chaleur et systèmes de ventilation) font partie de nos domaines de prédilection.'
+              label='CHAUFFAGE'
+              path='/services'
             />
           </ul>
         </div>
+        <Link to='/services' className="arrow-right"> TOUS NOS SERVICES  <i class="fas fa-arrow-right"> </i></Link>
       </div>
+      
     </div>
   );
 }
