@@ -16,6 +16,33 @@
   font-size: 3rem;
 }
 
+.services {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.contact {
+
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
 
 .scrollTop {
   color: #ef3021;
@@ -37,7 +64,9 @@
   opacity: 2;
   
 }
-
+body{
+  min-width: 300px;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
