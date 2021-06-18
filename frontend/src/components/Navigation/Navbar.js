@@ -31,6 +31,9 @@ function Navbar() {
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           <img src={'images/logo.png'}  />
           </Link>
+          <Link to='/' className='nav-links-master' onClick={closeMobileMenu}>
+                MASTER SERVICES
+              </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -51,7 +54,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/contact'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
