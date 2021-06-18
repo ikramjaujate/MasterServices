@@ -8,9 +8,9 @@ function HeroSection() {
   return (
     <>
     <div className='hero-container'>
-      <img class="accueil"alt="accueil" src="/images/construction.jpeg"/>
-      
-      <h1>AU SERVICE DE VOTRE CONFORT</h1>
+    <img className="accueil"src={'/images/bat.jpg'} />
+      <h1>MASTER SERVICES</h1>
+      <p>SPÉCIALISTE DES TRAVAUX DE RÉNOVATION ET CONSTRUCTION</p>
       <div className='hero-btns'>
         <Button
           className='btns'
