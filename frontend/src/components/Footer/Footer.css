@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   
 }
 
@@ -126,9 +127,10 @@ img{
 }
 .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-right: 2%;
   align-items: center;
-  width: 240px;
+  width: 100px;
 }
 
 .social-logo {
@@ -148,7 +150,7 @@ img{
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 960px) {
   .footer-links {
     padding-top: 2rem;
     
