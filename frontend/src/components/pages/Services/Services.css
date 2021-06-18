@@ -1,0 +1,17 @@
+.titre{
+    display: center;
+    height: 30vh;
+    align-items: center;
+    font-size: 6rem;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 960px) {
+    .titre{
+        display: center;
+        height: 30vh;
+        align-items: center;
+        font-size: 4rem;
+        padding-top: 30px;
+    }
+}
