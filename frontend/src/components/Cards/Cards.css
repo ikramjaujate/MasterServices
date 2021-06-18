@@ -6,14 +6,15 @@
 h1 {
   text-align: center;
 }
-.safe-industery-area .safe-caption .safe-pera-one{
+.safe-pera-one{
   color: #2c234d;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 25px;
+  line-height: 1.3;
   font-size: 18px;
-  padding-right: 76px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: justify;
 }
 p{
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -30,6 +31,7 @@ p{
   max-width: 1120px;
   width: 90%;
   margin: 0 auto;
+  
 }
 
 .cards__wrapper {
@@ -127,6 +129,12 @@ p{
   line-height: 24px;
 }
 
+.card{
+  border-style: solid ;
+  border-color: red;
+  padding:10px;
+
+}
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;

@@ -11,11 +11,14 @@ function Cards() {
       <div class="col-xl-6 col-lg-6 col-md pr-0">
       <div className='cards__container'>
         <div className='cards__wrapper'>
-      <p class="safe-pera-one">Master Services est une entreprise spécialisée dans les travaux d’électricité générale et de l’HVAC à savoir la ventilation, la climatisation, la réfrigération, la régulation ainsi que le chauffage.</p>
-      <p class="safe-pera-one">Nous assurons l’installation, la maintenance, la rénovation, et le dépannage sur tous types de chantiers : particuliers, professionnels, courant fort, courant faible.</p>
-      <p class="safe-pera-one">Choisir Master Services c'est choisir la qualité. Pour nous, une implication totale est capitale. Nous fournissons des installations de qualité et nous vous prodiguons dès le début des conseils sur mesure.</p>
-      <p class="safe-pera-one">Conscients de l’importance du respect des normes en vigueur, nous utilisons des matériaux agréés et de qualité, vous garantissant ainsi la qualité et la fiabilité avec laquelle vos projets méritent d’être élaborés.</p>
-</div>
+          <div className='card'>
+            <p class="safe-pera-one">Master Services est une entreprise spécialisée dans les travaux d’électricité générale et de l’HVAC à savoir la ventilation, la climatisation, la réfrigération, la régulation ainsi que le chauffage.</p>
+            <p class="safe-pera-one">Nous assurons l’installation, la maintenance, la rénovation, et le dépannage sur tous types de chantiers : particuliers, professionnels, courant fort, courant faible.</p>
+            <p class="safe-pera-one">Choisir Master Services c'est choisir la qualité. Pour nous, une implication totale est capitale. Nous fournissons des installations de qualité et nous vous prodiguons dès le début des conseils sur mesure.</p>
+            <p class="safe-pera-one">Conscients de l’importance du respect des normes en vigueur, nous utilisons des matériaux agréés et de qualité, vous garantissant ainsi la qualité et la fiabilité avec laquelle vos projets méritent d’être élaborés.</p>
+    
+          </div>
+           </div>
 </div></div>
       <h1>NOS SERVICES</h1>
       <div className='cards__container'>
@@ -35,7 +38,7 @@ function Cards() {
               path='/services'
             />
             <CardItem
-              src='images/img-8.jpg'
+              src='images/hvac.jpg'
               text='La plomberie, le chauffage, le sanitaire et l’HVAC (climatisations, pompes à chaleur et systèmes de ventilation) font partie de nos domaines de prédilection.'
               label='CHAUFFAGE'
               path='/services'
