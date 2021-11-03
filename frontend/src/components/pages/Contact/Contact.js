@@ -2,7 +2,24 @@ import React from 'react';
 import '../../../App.css';
 import './Contact.css'
 import Footer from '../../Footer/Footer';
+import emailjs from 'emailjs-com'
+import Swal from 'sweetalert2'
+
+
 export default function Contact() {
+  function sendEmail(e){
+    e.preventDefault();
+
+    emailjs.sendForm('service_s563wmf', 'template_jbllr8f', e.target, "user_uKj51RakAAFPe2cQazwMo")
+    .then(res =>{
+      Swal.fire(
+        'Votre message a bien été envoyé',
+        'Nous vous contacterons le plus vite possible ',
+        'success'
+      )
+      //console.log(res)
+    }).catch(err=>console.log(err))
+  }
   return (
     <>
     <section id="contact">
@@ -12,10 +29,10 @@ export default function Contact() {
         
           <label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox"/>
       
-          <form action="" method="post" class="contactform">
-            <p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_nom"/><label for="contact_nom">NOM</label></p>
-            <p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"/><label for="contact_email">EMAIL</label></p>
-            <p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"/><label for="contact_sujet">SUJET</label></p>
+          <form onSubmit={sendEmail} class="contactform">
+            <p class="input_wrapper"><input type="text" name="contact_nom" id ="contact_nom"/><label for="contact_nom">NOM</label></p>
+            <p class="input_wrapper"><input type="text" name="contact_email" id ="contact_email"/><label for="contact_email">EMAIL</label></p>
+            <p class="input_wrapper"><input type="text" name="contact_sujet" id ="contact_sujet"/><label for="contact_sujet">SUJET</label></p>
             <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
             <p class="submit_wrapper"><input type="submit" value="ENVOYER"/></p>			
           </form>
