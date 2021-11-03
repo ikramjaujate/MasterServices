@@ -72,7 +72,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>DEVIS</Button>}
+          
         </div>
       </nav>
     </>
